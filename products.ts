@@ -15,11 +15,14 @@ const arrayDeProductos = [{
     id: 3
 }]
 function getAll() {
-    
+    return arrayDeProductos;
 }
 
 function getById(id: number) {
-    
+    const idDelProduct = arrayDeProductos.find(function (p) {
+        return p.id == id;    
+    })
+    return idDelProduct;
 }
 
 export {
